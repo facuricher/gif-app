@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test GifsItem must match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Patricio"
+      src="https://bob-esponja.com/patricio.jpng"
+    />
+    <p>
+      Patricio
+    </p>
+  </div>
+</div>
+`;
