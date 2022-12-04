@@ -14,8 +14,6 @@ describe('test GifsItem', () => {
 
   test('must show the image and the indicated url', () => {
     render(<GifsItem title={ title } url={ url }/>);
-    //screen.debug();
-    //expect( screen.getByRole('img').alt ).toBe( title );
     const { src, alt } = screen.getByRole('img');
     expect( src ).toBe( url );
     expect( alt ).toBe( title );

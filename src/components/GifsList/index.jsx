@@ -1,7 +1,8 @@
-import { useFetchGifs } from "../../hooks";
+import PropTypes from 'prop-types';
 
-import { GifsItem } from "../Gif/index";
+import { useFetchGifs } from '../../hooks';
 
+import { GifsItem } from '../Gif/index';
 
 
 export function GifsList({ category }) {
@@ -12,7 +13,7 @@ export function GifsList({ category }) {
   <>
     <h3>{ category }</h3>
     {
-      isLoading  && (<h2>Loading...</h2>)
+      isLoading  && ( <h2>Loading...</h2> )
     }
     <div className='card-grid'>
       {
@@ -27,3 +28,7 @@ export function GifsList({ category }) {
   </>
  )
 }
+
+GifsList.prototype = {
+  category: PropTypes.string.isRequired,
+};
