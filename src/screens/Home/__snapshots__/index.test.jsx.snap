@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in <Home /> must match snapshot 1`] = `
+<div>
+  <h1>
+    Find your favorite gifs
+  </h1>
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="search gifs"
+      type="text"
+      value=""
+    />
+  </form>
+  <h3>
+    Rick and Morty
+  </h3>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
