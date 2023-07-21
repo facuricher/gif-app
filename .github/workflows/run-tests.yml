@@ -23,3 +23,14 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Check test results and set status
+        run: |
+          if [ $? -ne 0 ]; then
+            echo "Tests failed. Blocking merge."
+            gh pr review ${{ github.event.number }} --reject
+          else
+            echo "Tests passed. Merge allowed."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
