@@ -15,6 +15,7 @@ export function Home() {
   <>
       <h1>Find your favorite gifs</h1>
       <h2>esto es una prueba</h2>
+      <h2>esto es una prueba2</h2>
       <AddCategory 
         onNewCateory={ addCategory }
       />
